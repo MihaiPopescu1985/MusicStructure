@@ -1,5 +1,9 @@
 /**
  * Music Structure app made for Udacity Android Basics by Google Nanodegree Program
+ *
+ * I've used song list from www.billboard.com
+ * This app also implements a click that direct the user to the specific web pages
+ *
  */
 
 

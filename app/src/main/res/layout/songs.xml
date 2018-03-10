@@ -9,8 +9,8 @@
     <TextView
         android:id="@+id/song_title"
         style="@style/SongListStyle"
-        android:layout_weight="0"
         android:layout_marginTop="8dp"
+        android:layout_weight="0"
         android:text="@string/song_title"
         android:textSize="20sp"
         android:textStyle="bold" />
@@ -18,11 +18,12 @@
     <TextView
         android:id="@+id/song_author"
         style="@style/SongListStyle"
-        android:layout_weight="0"
         android:layout_marginBottom="8dp"
+        android:layout_weight="0"
         android:text="@string/song_author" />
 
-    <View style="@style/HorisontalLineStyle"
-        android:layout_weight="0"/>
+    <View
+        style="@style/HorisontalLineStyle"
+        android:layout_weight="0" />
 
 </LinearLayout>

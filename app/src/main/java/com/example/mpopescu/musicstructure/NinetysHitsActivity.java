@@ -12,7 +12,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by MPopescu on 10-Mar-18.
+ *
+ * I've used the song list from www.billboard.com
+ * a link to the specific web page is implemented in the app
+ *
  */
 
 public class NinetysHitsActivity extends AppCompatActivity {

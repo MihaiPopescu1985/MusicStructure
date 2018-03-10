@@ -14,7 +14,7 @@
 
         <View
             style="@style/HorisontalLineStyle"
-            android:layout_height="0.5dp"/>
+            android:layout_height="0.5dp" />
 
         <TextView
             android:id="@+id/_70s_hits"
@@ -24,7 +24,7 @@
 
         <View
             style="@style/HorisontalLineStyle"
-            android:layout_height="0.5dp"/>
+            android:layout_height="0.5dp" />
 
         <TextView
             android:id="@+id/_80s_hits"
@@ -34,7 +34,7 @@
 
         <View
             style="@style/HorisontalLineStyle"
-            android:layout_height="0.5dp"/>
+            android:layout_height="0.5dp" />
 
         <TextView
             android:id="@+id/_90s_hits"
@@ -44,7 +44,7 @@
 
         <View
             style="@style/HorisontalLineStyle"
-            android:layout_height="0.5dp"/>
+            android:layout_height="0.5dp" />
 
         <TextView
             android:id="@+id/_00s_hits"
@@ -54,7 +54,7 @@
 
         <View
             style="@style/HorisontalLineStyle"
-            android:layout_height="0.5dp"/>
+            android:layout_height="0.5dp" />
 
     </LinearLayout>
 

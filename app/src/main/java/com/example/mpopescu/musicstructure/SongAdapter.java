@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by MPopescu on 10-Mar-18.
+ * Implements the SongAdapter used in the app
  */
 
 public class SongAdapter extends ArrayAdapter<Song> {
