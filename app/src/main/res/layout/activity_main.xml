@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.example.mpopescu.musicstructure.MainActivity">
+
+    <View
+        style="@style/HorisontalLineStyle"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/_70s_hits"
+        style="@style/MainLayoutTextViewStyle"
+        android:background="@color/_70s_color"
+        android:text="@string/_70s_text_view" />
+
+    <View
+        style="@style/HorisontalLineStyle"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/_80s_hits"
+        style="@style/MainLayoutTextViewStyle"
+        android:background="@color/_80s_color"
+        android:text="@string/_80s_text_view" />
+
+    <View
+        style="@style/HorisontalLineStyle"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/_90s_hits"
+        style="@style/MainLayoutTextViewStyle"
+        android:background="@color/_90s_color"
+        android:text="@string/_90s_text_view" />
+
+    <View
+        style="@style/HorisontalLineStyle"
+        android:layout_height="0.5dp"/>
+
+    <TextView
+        android:id="@+id/_00s_hits"
+        style="@style/MainLayoutTextViewStyle"
+        android:background="@color/_00s_color"
+        android:text="@string/_00s_text_view" />
+
+    <View
+        style="@style/HorisontalLineStyle"
+        android:layout_height="0.5dp"/>
+
+</LinearLayout>

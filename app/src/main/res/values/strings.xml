@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Musical Hits</string>
+    <string name="_70s_text_view">\'70s Best Hits</string>
+    <string name="_80s_text_view">\'80s Best Hits</string>
+    <string name="_90s_text_view">\'90s Best Hits</string>
+    <string name="_00s_text_view">\'00s Best Hits</string>
+    <string name="song_title">Song Title</string>
+    <string name="song_author">Song Author</string>
+</resources>
