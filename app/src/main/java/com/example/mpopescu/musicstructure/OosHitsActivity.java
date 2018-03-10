@@ -1,6 +1,7 @@
 package com.example.mpopescu.musicstructure;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -20,14 +21,23 @@ public class OosHitsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
 
+        //Sets the "About" text field with info about this activity
         TextView textView = findViewById(R.id.about);
         textView.setText(R.string.best_20_songs);
 
+        //Opens the web page with the original songs list
+        textView.setOnClickListener(view ->
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(
+                        "https://www.billboard.com/articles/news/6304098/billboard-hot-100-hits-2000s"
+                ))));
+
+        //Pressing this button, the app returns to the main activity
         Button button = findViewById(R.id.go_back_button);
         button.setOnClickListener(view -> startActivity(
                 new Intent(OosHitsActivity.this, MainActivity.class)
         ));
 
+        //Populating the ArrayList with songs to be displayed
         ArrayList<Song> songs = new ArrayList<>();
 
         songs.add(new Song("We Belong Together", "Mariah Carey"));
@@ -51,7 +61,10 @@ public class OosHitsActivity extends AppCompatActivity {
         songs.add(new Song("Foolish", "Ashanti"));
         songs.add(new Song("Hey Ya!", "OutKast"));
 
+        //Getting the ListView from the layout
         ListView listView = findViewById(R.id.list_song);
+
+        //Passing a custom adapter to the ListView
         listView.setAdapter(new SongAdapter(this, songs));
     }
 }

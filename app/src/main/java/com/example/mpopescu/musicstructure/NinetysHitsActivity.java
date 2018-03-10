@@ -1,6 +1,7 @@
 package com.example.mpopescu.musicstructure;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -21,14 +22,23 @@ public class NinetysHitsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.song_list);
 
+        //Sets the "About" text field with info about this activity
         TextView textView = findViewById(R.id.about);
         textView.setText(R.string.best_20_songs);
 
+        //Opens the web page with the original songs list
+        textView.setOnClickListener(view ->
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(
+                        "https://www.billboard.com/articles/news/6297023/billboard-hot-100-1990"
+                ))));
+
+        //Pressing this button, the app returns to the main activity
         Button button = findViewById(R.id.go_back_button);
         button.setOnClickListener(view -> startActivity(
                 new Intent(NinetysHitsActivity.this, MainActivity.class)
         ));
 
+        //Populating the ArrayList with songs to be displayed
         ArrayList<Song> songs = new ArrayList<>();
 
         songs.add(new Song("How Do I Live", "LeAnn Rimes "));
@@ -53,7 +63,10 @@ public class NinetysHitsActivity extends AppCompatActivity {
         songs.add(new Song("Gangsta's Paradise", "Coolio Featuring L.V."));
         songs.add(new Song("Nothing Compares 2 U", "Sinead O'Connor"));
 
+        //Getting the ListView from the layout
         ListView listView = findViewById(R.id.list_song);
+
+        //Passing a custom adapter to the ListView
         listView.setAdapter(new SongAdapter(this, songs));
     }
 }
