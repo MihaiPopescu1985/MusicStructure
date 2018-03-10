@@ -6,4 +6,6 @@
     <string name="_00s_text_view">\'00s Best Hits</string>
     <string name="song_title">Song Title</string>
     <string name="song_author">Song Author</string>
+    <string name="back">BACK</string>
+    <string name="best_20_songs">Best 20 songs :</string>
 </resources>
