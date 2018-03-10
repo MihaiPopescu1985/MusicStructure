@@ -14,9 +14,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TextView seventysHits = findViewById(R.id._70s_hits);
+        seventysHits.setOnClickListener(view -> startActivity(
+                new Intent(MainActivity.this, SeventysHitsActivity.class)
+        ));
 
-        seventysHits.setOnClickListener(view -> {
-            Intent seventysIntent = new Intent(MainActivity.this, SeventysHitsActivity.class);
-        startActivity(seventysIntent);});
+        TextView eightysHits = findViewById(R.id._80s_hits);
+        eightysHits.setOnClickListener(view -> startActivity(
+                new Intent(MainActivity.this, EightysHitsActivity.class)
+        ));
+
+        TextView ninetysHits = findViewById(R.id._90s_hits);
+        ninetysHits.setOnClickListener(view -> startActivity(
+                new Intent(MainActivity.this, NinetysHitsActivity.class)
+        ));
+
+        TextView oosHits = findViewById(R.id._00s_hits);
+        oosHits.setOnClickListener(view -> startActivity(
+                new Intent(MainActivity.this, OosHitsActivity.class)
+        ));
     }
 }
