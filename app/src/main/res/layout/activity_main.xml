@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,55 +7,11 @@
     android:orientation="vertical"
     tools:context="com.example.mpopescu.musicstructure.MainActivity">
 
-    <LinearLayout
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <View
-            style="@style/HorisontalLineStyle"
-            android:layout_height="0.5dp" />
+    </android.support.v4.view.ViewPager>
 
-        <TextView
-            android:id="@+id/_70s_hits"
-            style="@style/MainLayoutTextViewStyle"
-            android:background="@color/_70s_color"
-            android:text="@string/_70s_text_view" />
-
-        <View
-            style="@style/HorisontalLineStyle"
-            android:layout_height="0.5dp" />
-
-        <TextView
-            android:id="@+id/_80s_hits"
-            style="@style/MainLayoutTextViewStyle"
-            android:background="@color/_80s_color"
-            android:text="@string/_80s_text_view" />
-
-        <View
-            style="@style/HorisontalLineStyle"
-            android:layout_height="0.5dp" />
-
-        <TextView
-            android:id="@+id/_90s_hits"
-            style="@style/MainLayoutTextViewStyle"
-            android:background="@color/_90s_color"
-            android:text="@string/_90s_text_view" />
-
-        <View
-            style="@style/HorisontalLineStyle"
-            android:layout_height="0.5dp" />
-
-        <TextView
-            android:id="@+id/_00s_hits"
-            style="@style/MainLayoutTextViewStyle"
-            android:background="@color/_00s_color"
-            android:text="@string/_00s_text_view" />
-
-        <View
-            style="@style/HorisontalLineStyle"
-            android:layout_height="0.5dp" />
-
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>
