@@ -28,23 +28,19 @@ public class EightysHitsFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.song_list, container, false);
 
-        //Sets the "About" text field with info about this activity
         TextView textView = view.findViewById(R.id.about);
         textView.setText(R.string.best_20_songs);
 
-        //Opens the web page with the original songs list
         textView.setOnClickListener(views ->
                 startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(
                         "https://www.billboard.com/articles/news/6296897/billboard-hot-100-1980"
                 ))));
 
-        //Pressing this button, the app returns to the main activity
         Button button = view.findViewById(R.id.go_back_button);
         button.setOnClickListener(views -> startActivity(
                 new Intent(getActivity(), MainActivity.class)
         ));
 
-        //Populating the ArrayList with songs to be displayed
         ArrayList<Song> songs = new ArrayList<>();
 
         songs.add(new Song("Physical", "Olivia Newton-John"));
@@ -68,10 +64,7 @@ public class EightysHitsFragment extends Fragment {
         songs.add(new Song("Say You, Say Me", "Lionel Richie"));
         songs.add(new Song("All Night Long (All Night)", "Lionel Richie"));
 
-        //Getting the ListView from the layout
         ListView listView = view.findViewById(R.id.list_song);
-
-        //Passing a custom adapter to the ListView
         listView.setAdapter(new SongAdapter(getActivity(), songs));
 
         return view;
