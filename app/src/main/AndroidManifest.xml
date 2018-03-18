@@ -17,23 +17,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SeventysHitsActivity"
-            android:label="@string/_70s_text_view"
-            android:parentActivityName=".MainActivity">
-        </activity>
-
         <activity android:name=".EightysHitsActivity"
             android:label="@string/_80s_text_view"
-            android:parentActivityName=".MainActivity">
-        </activity>
-
-        <activity android:name=".NinetysHitsActivity"
-            android:label="@string/_90s_text_view"
-            android:parentActivityName=".MainActivity">
-        </activity>
-
-        <activity android:name=".OosHitsActivity"
-            android:label="@string/_00s_text_view"
             android:parentActivityName=".MainActivity">
         </activity>
 
